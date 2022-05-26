@@ -205,3 +205,14 @@ const generatorObj = generatorFunction() // it's an iterator
 for(const word of generatorObj){
     console.log(word)
 }
+
+
+// similar to the kurento example
+function add10(number, callback){
+    number = number+10
+    return callback(number)
+}
+
+add10(5,function(result){
+    console.log(result)
+})
